@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	position: absolute;
+}
+
+body {
+	height: 90vh;
+	width: 100vw;
+	background: lavender;
+}
+
+#canvas {
+	height: 75vmin;
+	width: 75vmin;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#body {
+	width: 45vmin;
+	height: 50vmin;
+	background: #FDEF30;
+	border-radius: 50%;
+	left: 15vmin;
+	top: 10vmin;
+}
+
+#body::before {
+	content: '';
+	display: block;
+	background: #FDEF30;
+	width: 12vmin;
+	height: 10vmin;
+	position: absolute;
+	border-radius: 0 10vmin;
+	left: 12vmin;
+	top: -9vmin;
+}
+
+#eye1, #eye2 {
+	width: 15vmin;
+	height: 15vmin;
+	background: #1C1C1C;
+	border-radius: 50%;
+	left: 5vmin;
+	top: 10vmin;
+}
+
+#eye2 {
+	left: 25vmin;
+}
+
+#eye1::before, #eye2::before {
+	content: '';
+	display: block;
+	background: #F0F0F0;
+	width: 5vmin;
+	height: 6vmin;
+	position: absolute;
+	border-radius: 50%;
+	left: 2vmin;
+	top: 2vmin;
+}
+
+#eye1::after, #eye2::after {
+	content: '';
+	display: block;
+	background: #F0F0F0;
+	width: 3vmin;
+	height: 3vmin;
+	position: absolute;
+	border-radius: 50%;
+	opacity: 0.7;
+	left: 9vmin;
+	top: 9vmin;
+}
+
+#beak {
+	width: 0;
+	height: 0;
+	border-color: #7A7A00 rgba(0,0,0,0) rgba(0,0,0,0);
+	border-style: solid;
+	border-width: 5vmin 4vmin;
+	left: 19.5vmin;
+	top: 30vmin;
+}
+
+#feet {
+	background: rgba(0,0,0,0);
+	width: 20vmin;
+	height: 20vmin;
+	border: 2vmin solid #000;
+	border-radius: 50%;
+	border-bottom-color: rgba(0,0,0,0);
+	left: 25vmin;
+	top: 47vmin;
+}
+
+#feet::before, #feet::after {
+	content: '';
+	display: block;
+	border: 2vmin solid #7A7A00;
+	border-color: rgba(0,0,0,0) rgba(0,0,0,0) #000 rgba(0,0,0,0);
+	position: absolute;
+	border-left-width: 10vmin;
+	top: 15vmin;
+	left: -7vmin;
+}
+
+#feet::after {
+	border-right-width: 10vmin;
+	border-left-width: 2vmin;
+	left: 15vmin;
+}
+
+#back {
+	width: 80vmin;
+	height: 27vmin;
+	background: #C44444;
+	border-radius: 27vmin;
+	left: -3vmin;
+}
+
+#back::before, #back::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 70vmin;
+	height: 24vmin;
+	background: #C44444;
+	border-radius: 24vmin;
+	top: 27vmin;
+	left: 5vmin;
+}
+
+#back::after {
+	top: 51vmin;
+	left: -5vmin;
+	width: 80vmin;
+}
